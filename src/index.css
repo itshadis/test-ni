@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.square {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+.custom-spin .ant-spin-dot i {
+  background-color: #ff4d4f !important;
+}
