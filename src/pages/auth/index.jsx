@@ -9,8 +9,8 @@ const Auth = () => {
   const [inLogin, setInLogin] = useState(true)
   
   return (
-    <div className="flex justify-center items-center">
-      <div className="mx-72 flex flex-1 flex-col justify-center items-center gap-8">
+    <div className="h-screen flex justify-center items-center">
+      <div className="mx-36 lg:mx-72 xl:mx-40 flex flex-1 flex-col justify-center items-center gap-8">
         <h1 className="text-xl font-semibold flex gap-4">
           <span>
             <img src={logo} alt="logo" />
@@ -33,7 +33,7 @@ const Auth = () => {
           </p>
         </div>
 
-      <div className="min-h-min bg-green-200">
+      <div className="min-h-min hidden xl:block">
         <img className="h-screen object-cover" src={ilustrasiLogin} alt="ilustrasi-login" />
       </div>
     </div>
