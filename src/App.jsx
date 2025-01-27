@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom"
 import { lazy, Suspense } from "react"
 import ProtectedRoute from "./pages/protected-route"
 import { Spin } from "antd"
+import NotFound from "./pages/not-found"
 
 const Auth = lazy(() => import("./pages/auth"))
 const Home = lazy(() => import("./pages/home"))
@@ -21,6 +22,7 @@ export default function App() {
     >
       <Routes>
         <Route path="/auth" element={<Auth />} />
+        <Route path="*" element={<NotFound />} />
         
         <Route path="/" element={<ProtectedRoute />}>
           <Route index element={<Home />} />
